@@ -1,0 +1,18 @@
+*,*:before,*:after{
+  margin: 0;
+  padding: 0;
+  box-model: border-box;
+}
+.page{
+  background-image: url(../img/marvel_way-page.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  gap: 16px;
+}
+.page section{
+  background: rgb(0,0,0,0.35);
+}
