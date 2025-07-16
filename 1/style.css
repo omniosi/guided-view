@@ -6,10 +6,10 @@ html{
   padding: 0;
   box-sizing: inherit;
 }
-section.page{
+body{
   background-image: url(../img/marvel_way-page.jpg);
   background-size: contain;
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
@@ -18,7 +18,7 @@ section.page{
   gap: 8px;
   padding: 8px 0;
 }
-section.page article{
+section{
   background: rgb(0,0,0,0.35);
   display: flex;
   flex-flow: row wrap;
