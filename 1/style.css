@@ -1,9 +1,12 @@
+html{
+  box-sizing: border-box;
+}
 *,*:before,*:after{
   margin: 0;
   padding: 0;
-  box-model: border-box;
+  box-sizing: inherit;
 }
-.page{
+section.page{
   background-image: url(../img/marvel_way-page.jpg);
   background-size: contain;
   background-position: center;
@@ -11,8 +14,12 @@
   width: 100vw;
   height: 100vh;
   display: flex;
-  gap: 16px;
+  flex-flow: row wrap;
+  gap: 8px;
+  padding: 8px 0;
 }
-.page section{
+section.page article{
   background: rgb(0,0,0,0.35);
+  display: flex;
+  flex-flow: row wrap;
 }
