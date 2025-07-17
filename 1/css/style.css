@@ -6,7 +6,7 @@ html{
   padding: 0;
   box-sizing: inherit;
 }
-body{
+.page{
   background-image: url(../img/marvel_way-page.jpg);
   background-size: contain;
   background-position: center top;
@@ -19,9 +19,19 @@ body{
   padding: 1% 0;
   font: sans-serif;
 }
-section,
+.page{
+  width: 100vw;
+  height: auto;
+  aspect-ratio: 990 / 1425;
+  margin: auto;
+}
 a{
   background: rgb(0,0,0,0.35);
   width: 49%;
-  height: 32.5%;
+  height: 31.3%;
+  height: clamp(31.3%,31.3%,32.3%);
+  height: 32.3%;
+}
+a:hover{
+  background: rgb(0,0,0,0.5);
 }
