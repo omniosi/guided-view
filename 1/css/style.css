@@ -17,8 +17,10 @@ body{
   flex-flow: row wrap;
   gap: 1%;
   padding: 1% 0;
+  font: sans-serif;
 }
-section{
+section,
+a{
   background: rgb(0,0,0,0.35);
   width: 49%;
   height: 32.5%;

@@ -1,0 +1,26 @@
+html{
+  box-sizing: border-box;
+}
+*,*:before,*:after{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body{
+  background-image: url(../img/marvel_way-page-frame-1.jpg);
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1%;
+  padding: 1% 0;
+  font: sans-serif;
+}
+a{
+  background: rgb(0,0,0,0.35);
+  width: 49%;
+  /* height: 32.5%; */
+}
