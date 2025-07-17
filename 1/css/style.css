@@ -1,3 +1,9 @@
+:root{
+  view-transition-name: root;
+}
+@view-transition{
+  navigation: auto;
+}
 html{
   box-sizing: border-box;
 }
