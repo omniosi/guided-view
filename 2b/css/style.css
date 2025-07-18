@@ -1,0 +1,58 @@
+@view-transition{
+  navigation: auto;
+}
+html{
+  box-sizing: border-box;
+}
+*,*:before,*:after{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+#zoom1,
+.page{
+  /* background-image: url(../img/holmes_watson-page.jpg); */
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: auto;
+  /* display: flex; */
+  /* flex-flow: row wrap; */
+  aspect-ratio: 1340 / 2049;
+  margin: auto;
+}
+.page img{
+  /* width: 30%; */
+  /* max-width: 30%; */
+  height: auto;
+  /* object-fit: contain; */
+  /* object-fit: cover; */
+}
+#zoom1 img{
+  width: 100vw;
+  height: auto;
+}
+a{
+  opacity: 0.5;
+  transition: opacity 1s ease-in-out;
+}
+a:hover{
+  opacity: 1;
+}
+a:nth-child(8) img,
+a:nth-child(7) img,
+a:nth-child(6) img,
+a:nth-child(3) img,
+a:nth-child(2) img,
+a:first-child img{ width: 32.3%; }
+a:nth-child(5) img,
+a:nth-child(4) img{ width: 49%; }
+
+#zoom1,
+#frame1{
+  view-transition-name: one;
+}
+#zoom1{
+  opacity: 1;
+}
