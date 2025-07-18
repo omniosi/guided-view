@@ -13,7 +13,6 @@ body{
   background: white;
 }
 .page{
-  background-color: white;
   background-image: url(../img/holmes_watson-page.jpg);
   background-size: contain;
   background-position: center top;
@@ -30,17 +29,26 @@ body{
 }
 a{
   background: rgb(0,0,0,0.35);
-  width: 49%;
-  height: 29%;
+  /* width: 49%; */
+  /* height: 29%; */
   /* height: clamp(31.3%,31.3%,32.3%); */
   /* height: 32.3%; */
 }
 a:hover{
   background: rgb(0,0,0,0.5);
+  /* opacity: 0.5; */
 }
-a:first-child{ width: 136px; }
+/* a:first-child{ width: 136px; } */
 a:nth-child(2){ width: 203px; }
 a:nth-child(3){ width: 221px; }
 a:nth-child(6){ width: 203px; }
 a:nth-child(7){ width: 190px; }
 a:nth-child(8){ width: 165px; }
+
+#zoom1,
+#frame1{
+  view-transition-name: one;
+}
+#zoom1{
+  
+}
