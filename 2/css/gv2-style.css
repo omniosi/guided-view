@@ -1,0 +1,46 @@
+@view-transition{
+  navigation: auto;
+}
+html{
+  box-sizing: border-box;
+}
+*,*:before,*:after{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body{
+  background: white;
+}
+.page{
+  background-color: white;
+  background-image: url(../img/holmes_watson-page.jpg);
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 0.25% 1.5%;
+  padding: 5% 4%;
+  font: sans-serif;
+  aspect-ratio: 1340 / 2049;
+  margin: auto;
+}
+a{
+  background: rgb(0,0,0,0.35);
+  width: 49%;
+  height: 29%;
+  /* height: clamp(31.3%,31.3%,32.3%); */
+  /* height: 32.3%; */
+}
+a:hover{
+  background: rgb(0,0,0,0.5);
+}
+a:first-child{ width: 136px; }
+a:nth-child(2){ width: 203px; }
+a:nth-child(3){ width: 221px; }
+a:nth-child(6){ width: 203px; }
+a:nth-child(7){ width: 190px; }
+a:nth-child(8){ width: 165px; }
