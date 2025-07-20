@@ -3,15 +3,23 @@
 }
 html{
   box-sizing: border-box;
+  font-size: 1em;
 }
 *,*:before,*:after{
   margin: 0;
   padding: 0;
   box-sizing: inherit;
 }
+::view-transition-new(root),::view-transition-old(root){
+  transform-origin:center;
+}
+
 .disabled{
   pointer-events: none;
   opacity: 0.8;
+}
+h1{
+  font-size: 1.65em;
 }
 .page{
   width: 100vw;
@@ -62,25 +70,26 @@ html{
 #frame7 img{
   view-transition-name: seven;
 }
-#frame8 img{
+/* .page #frame8 img, */
+/* .frame #frame8 img, */
+.page .frame8 img,
+.frame .frame8 img{
   view-transition-name: eight;
+  transform-origin: center;
 }
-#frame8 img,
-#frame7 img,
-#frame6 img,
-#frame5 img,
-#frame4 img,
-#frame3 img,
-#frame2 img,
-#frame1 img{
-  /* view-transition-name: all; */
-  /* transform-origin: center; */
-}
-.frame{
-  display: flex;
+.frame.frame8 img,
+/* .frame #frame8 img, */
+.frame #frame7 img,
+.frame #frame6 img,
+.frame #frame5 img,
+.frame #frame4 img,
+.frame #frame3 img,
+.frame #frame2 img,
+.frame #frame1 img{
+  view-transition-name: all;
+  transform-origin: center;
 }
 .frame img{
-  /* margin: 0 auto; */
   width: 100vw;
   height: auto;
 }
@@ -91,7 +100,7 @@ header{
   padding: 1rem;
 }
 header nav{
-  padding: 1rem 0;
+  padding: 1rem 0 0;
 }
 header nav a span{
   display: none;
