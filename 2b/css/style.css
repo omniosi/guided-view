@@ -28,15 +28,40 @@ html{
 .page a:hover{
   opacity: 1;
 }
+.page a:nth-child(1) img{ width: 24%; }
+.page a:nth-child(2) img{ width: 35%; }
+.page a:nth-child(3) img{ width: 38%; }
 .page a:nth-child(5) img,
 .page a:nth-child(4) img{ width: 49%; }
+.page a:nth-child(6) img{ width: 34%; }
+.page a:nth-child(7) img{ width: 33%; }
+.page a:nth-child(8) img{ width: 30%; }
 
 #frame1 img{
   view-transition-name: one;
+}
+#frame2 img{
+  view-transition-name: two;
+}
+#frame3 img{
+  view-transition-name: three;
+}
+#frame8 img,
+#frame7 img,
+#frame6 img,
+#frame5 img,
+#frame4 img,
+#frame3 img,
+#frame2 img,
+#frame1 img{
+  view-transition-name: all;
+  transform-origin: center;
 }
 .frame{
   display: flex;
 }
 .frame img{
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  width: 100vw;
+  height: auto;
 }
