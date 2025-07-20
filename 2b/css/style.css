@@ -70,14 +70,10 @@ h1{
 #frame7 img{
   view-transition-name: seven;
 }
-/* .page #frame8 img, */
-/* .frame #frame8 img, */
-.page .frame8 img,
-.frame .frame8 img{
+#frame8 img{
   view-transition-name: eight;
-  transform-origin: center;
 }
-::view-transition-group(one),
+/* ::view-transition-group(one),
 ::view-transition-group(two),
 ::view-transition-group(three),
 ::view-transition-group(four),
@@ -86,7 +82,7 @@ h1{
 ::view-transition-group(seven),
 ::view-transition-group(eight){
   transform-origin: center;
-}
+} */
 .frame.frame8 img,
 /* .frame #frame8 img, */
 .frame #frame7 img,
