@@ -18,11 +18,9 @@ h1{
   font-size: 1.65em;
 }
 .page{
-  width: 100vw;
-  height: auto;
-  /* display: flex; */
-  /* flex-flow: row wrap; */
   aspect-ratio: 1340 / 2049;
+  width: auto;
+  height: 86vh;
   margin: auto;
 }
 .page img{
@@ -93,8 +91,12 @@ h1{
 ::view-transition-group(all){
   transform-origin: center;
 }
+.frame{
+  display: flex;
+  justify-content: center;
+}
 .frame img{
-  width: 100vw;
+  max-width: 100%;
   height: auto;
 }
 header{
